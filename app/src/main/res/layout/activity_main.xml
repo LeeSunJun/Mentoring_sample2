@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.testproject.MainActivity">
+
+    <TextView
+        android:id="@+id/BR_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:text="BUS\nReservation"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40sp"/>
+
+    <Button
+        android:id="@+id/mainB_1"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BR_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="Reservation"
+        android:onClick="mainB_1_clicked"/>
+
+
+    <Button
+        android:id="@+id/mainB_2"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainB_1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="Admin Mode"
+        android:onClick="mainB_2_clicked"/>
+
+    <Button
+        android:id="@+id/mainB_3"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainB_2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="Exit"
+        android:onClick="mainB_3_clicked"/>
+</RelativeLayout>

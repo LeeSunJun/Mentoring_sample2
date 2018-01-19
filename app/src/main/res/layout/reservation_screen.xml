@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/row1_b1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:background="#FF0000FF"
+            android:onClick="RB11_clicked"/>
+
+        <Button
+            android:id="@+id/row1_b2"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:background="#FF0000FF"
+            android:layout_toRightOf="@id/row1_b1"
+            android:onClick="RB12_clicked"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/row1">
+
+        <Button
+            android:id="@+id/row2_b1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:background="#FF0000FF"
+            android:onClick="RB21_clicked"/>
+
+        <Button
+            android:id="@+id/row2_b2"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:background="#FF0000FF"
+            android:layout_toRightOf="@id/row2_b1"
+            android:onClick="RB22_clicked"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/row2">
+
+        <Button
+            android:id="@+id/row3_b1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:background="#FF0000FF"
+            android:onClick="RB31_clicked"/>
+
+        <Button
+            android:id="@+id/row3_b2"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_margin="10sp"
+            android:background="#FF0000FF"
+            android:layout_toRightOf="@id/row3_b1"
+            android:onClick="RB32_clicked"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
