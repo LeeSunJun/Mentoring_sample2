@@ -11,8 +11,8 @@ import android.view.View;
 
 public class DetailActivity extends Activity{
 
-    int seatNum;
-    int num;
+    int seatNum; //for sending info about state of seat with the seat number
+    int num; //for getting seat number from previous Activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class DetailActivity extends Activity{
             finish();
     }
 
+    //reserve
     public void ok_b_clicked(View v) {
         seatNum += 10;
 
@@ -41,6 +42,7 @@ public class DetailActivity extends Activity{
         finish();
     }
 
+    //not reserve
     public void cancel_b_clicked(View v) {
         Intent returnIntent = new Intent();
         returnIntent.putExtra("seatNum",seatNum);
@@ -49,6 +51,8 @@ public class DetailActivity extends Activity{
         finish();
     }
 
+    //There are 2 valuable : num & seatNum
+    //change the format from num to seatNum
     public int NtoSN(int num) {
         switch (num) {
             case 11:
@@ -65,6 +69,7 @@ public class DetailActivity extends Activity{
                 return 5;
         }
 
+        //-1 mean error
         return -1;
     }
 }

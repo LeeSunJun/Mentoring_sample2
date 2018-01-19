@@ -16,8 +16,8 @@ import java.util.ArrayList;
 
 public class ReserveActivity extends Activity {
 
+    //define valuables for this Activity
     ArrayList<Integer> reserve;
-    ArrayList<Button> buttons;
 
     Button button11;
     Button button12;
@@ -31,8 +31,10 @@ public class ReserveActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reservation_screen);
 
+        //make an ArrayList for checking it's reserved or not
         reserve = new ArrayList<Integer>();
 
+        //initialize all seat (not reserved yet)
         reserve.add(1);
         reserve.add(1);
         reserve.add(1);
@@ -40,6 +42,7 @@ public class ReserveActivity extends Activity {
         reserve.add(1);
         reserve.add(1);
 
+        //connect button in .xml with .java
         button11 = findViewById(R.id.row1_b1);
         button12 = findViewById(R.id.row1_b2);
         button21 = findViewById(R.id.row2_b1);
@@ -64,9 +67,11 @@ public class ReserveActivity extends Activity {
                 Log.d("color", "color : " + color);
 
                 if(seatNum >= 10) {
+                    //it's reserved
                     seatNum -= 10;
                     color = 0xFFFF0000;
                 } else if (seatNum >= 0) {
+                    //it's not reserved
                     color = 0xFF0000FF;
                 } else {
                     Toast.makeText(this,"Wrong Reservation result",Toast.LENGTH_SHORT).show();
@@ -82,6 +87,11 @@ public class ReserveActivity extends Activity {
             }
         }
     }
+
+    //******************************************************************************************************
+    // Button controllors
+    // RB == Reservation Button
+    // RB11 ~ RB32 is the seat
 
     public void RB11_clicked(View v) {
         int seatNum = 0;
@@ -161,6 +171,9 @@ public class ReserveActivity extends Activity {
         }
     }
 
+    //**********************************************************************************************
+    //This function is for change the button's contribution
+    //if specific seat is reserved, then change its colr from blue to red
     public void Reserve_seat(int num, int color) {
         switch (num) {
             case 0:
