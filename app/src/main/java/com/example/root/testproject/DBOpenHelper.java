@@ -3,6 +3,7 @@ package com.example.root.testproject;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by root on 18. 1. 25.
@@ -17,9 +18,12 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public  void onCreate(SQLiteDatabase db) {
-        String sql = "create table seat (" +
-                "id integer, " +
-                "reserve integer);";
+        String sql = "create table reserve (" +
+                "idx integer not null primary key autoincrement , " +
+                "seatnum integer, " +
+                "reserved integer)";
+
+        Log.d("DB","created");
 
         db.execSQL(sql);
     }

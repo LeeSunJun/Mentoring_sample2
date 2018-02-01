@@ -7,10 +7,18 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    DBHandler controller;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        controller = new DBHandler(getApplicationContext());
+
+        if(controller.countData() == 0){
+            controller.init_insert(6);
+        }
     }
 
     //mainB_1 is reservation button
