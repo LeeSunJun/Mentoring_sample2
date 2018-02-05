@@ -43,7 +43,7 @@ public class DBHandler {
         Log.d("insert","idx : "+id);
     }
 
-    public void init_insert(int init){
+    public void init_insertofReserve(int init){
         db = helper.getWritableDatabase();
 
         for (int i = 1; i<=init ; i++) {
@@ -55,11 +55,11 @@ public class DBHandler {
             db.insert("reserve",null,values);
         }
 
-        select_all();
+        select_all_reserve();
     }
 
     //select data from DB
-    public Cursor select_all(){
+    public Cursor select_all_reserve(){
         Log.d("DB","select all");
 
         db = helper.getReadableDatabase();
@@ -89,7 +89,7 @@ public class DBHandler {
         return c;
     }
 
-    public int countData() {
+    public int count_reserveData() {
         db = helper.getReadableDatabase();
 
         Cursor c = db.query("reserve", null, null, null, null, null, null);

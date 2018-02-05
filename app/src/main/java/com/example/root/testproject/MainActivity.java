@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
         controller = new DBHandler(getApplicationContext());
 
-        if(controller.countData() == 0){
-            controller.init_insert(6);
+        if(controller.count_reserveData() == 0){
+            controller.init_insertofReserve(6);
         }
     }
 

@@ -23,7 +23,17 @@ public class DBOpenHelper extends SQLiteOpenHelper {
                 "seatnum integer, " +
                 "reserved integer)";
 
-        Log.d("DB","created");
+        Log.d("DB","reserve created");
+
+        db.execSQL(sql);
+
+        sql = "create table usr(" +
+                "idx interger not null primary key autoincrement, " +
+                "id text, " +
+                "pw text, " +
+                "auth integer)";
+
+        Log.d("DB","usr created");
 
         db.execSQL(sql);
     }

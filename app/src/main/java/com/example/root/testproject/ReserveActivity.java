@@ -51,7 +51,7 @@ public class ReserveActivity extends Activity {
         button32 = findViewById(R.id.row3_b2);
 
         //initialize all seat
-        for(int i = 0 ; i < controller.countData(); i++) {
+        for(int i = 0 ; i < controller.count_reserveData(); i++) {
             Cursor c;
             c = controller.select_seat(i+1);
             reserve.add(c.getInt(c.getColumnIndex("reserved")));
