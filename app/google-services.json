@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "557054691012",
+    "firebase_url": "https://busreserve-9c1af.firebaseio.com",
+    "project_id": "busreserve-9c1af",
+    "storage_bucket": "busreserve-9c1af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557054691012:android:cf9ceb39dce0c366",
+        "android_client_info": {
+          "package_name": "com.example.root.testproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557054691012-ds631v13t7p106bvu72obv84ubv2mj0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.testproject",
+            "certificate_hash": "3d39adf11a3fae5996542d0018806ffc53c181a0"
+          }
+        },
+        {
+          "client_id": "557054691012-ugejphvq4qptcnp7vtufd35no427975p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA39-POpSG3XX-9K7jP0ZXDwfwiL4um2CY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557054691012-ugejphvq4qptcnp7vtufd35no427975p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

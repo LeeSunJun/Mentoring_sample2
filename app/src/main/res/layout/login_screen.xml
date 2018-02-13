@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60sp"
         android:textSize="60sp"
-        android:text="<Login>"
+        android:text="Login"
         android:layout_centerHorizontal="true"/>
 
     <RelativeLayout

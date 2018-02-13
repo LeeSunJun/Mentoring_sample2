@@ -28,10 +28,8 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         db.execSQL(sql);
 
         sql = "create table usr(" +
-                "idx interger not null primary key autoincrement, " +
-                "id text, " +
-                "pw text, " +
-                "auth integer)";
+                "id text primary key, " +
+                "pw text)";
 
         Log.d("DB","usr created");
 

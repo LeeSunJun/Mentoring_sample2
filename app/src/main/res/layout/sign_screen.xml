@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60sp"
         android:textSize="60sp"
-        android:text="<Sign in>"
+        android:text="Sign in"
         android:layout_centerHorizontal="true"/>
 
     <RelativeLayout
@@ -59,7 +59,8 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:hint=" PW here"
-            android:layout_toRightOf="@id/pw_txt" />
+            android:layout_toRightOf="@id/pw_txt"
+            android:password="true"/>
 
     </RelativeLayout>
 
@@ -85,7 +86,8 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:hint="Confirm Password"
-            android:layout_toRightOf="@id/pwc_txt" />
+            android:layout_toRightOf="@id/pwc_txt"
+            android:password="true"/>
 
     </RelativeLayout>
 
@@ -99,21 +101,21 @@
         android:layout_margin="20sp">
 
         <Button
-            android:id="@+id/login_b"
+            android:id="@+id/signup_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Sign up"
             android:layout_margin="10sp"
-            android:onClick="login_b_clicked"/>
+            android:onClick="signup_b_clicked"/>
 
         <Button
-            android:id="@+id/signin_b"
+            android:id="@+id/cancel_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sign in"
+            android:text="cancel"
             android:layout_margin="10sp"
-            android:layout_toRightOf="@+id/login_b"
-            android:onClick="signin_b_clicked"/>
+            android:layout_toRightOf="@+id/signup_b"
+            android:onClick="cancel_b_clicked"/>
 
 
     </RelativeLayout>

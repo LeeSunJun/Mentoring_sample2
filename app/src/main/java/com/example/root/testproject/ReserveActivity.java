@@ -37,6 +37,7 @@ public class ReserveActivity extends Activity {
         setContentView(R.layout.reservation_screen);
 
         controller = new DBHandler(getApplicationContext());
+        controller.getfirebase();
 
         //make an ArrayList for checking it's reserved or not
         reserve = new ArrayList<Integer>();
@@ -215,6 +216,7 @@ public class ReserveActivity extends Activity {
 
         if(init == 0) {
             controller.update_reserved(num + 1, 1);
+            //controller.setFirebase();
             reserve.set(num, 1);
         }
     }
